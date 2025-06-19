@@ -1,14 +1,14 @@
-// 1.21	2025-06-18T21:14:39.0406365	NBLB/Model Definitions
+// 1.21	2025-06-19T11:54:01.4730484	NBLB/Model Definitions
 f03aac3cdc6d1c770c38588d66705a05f8aa34ef assets\minecraft\blockstates\smooth_stone.json
-ae4f7ccb2e5e20175316cd027166d0f0caaa780b assets\minecraft\blockstates\calcite.json
 99f4cc5c68bc06411d573fe5a3cd2cd04ecd6819 assets\minecraft\blockstates\polished_diorite.json
+ae4f7ccb2e5e20175316cd027166d0f0caaa780b assets\minecraft\blockstates\calcite.json
 56cda9892ffff6abfa12a6be1468ed8b4e372184 assets\nblb\models\item\smooth_stone_stairs.json
 d61dfe150a72a97327b5b79acac96c5fb2c9fd30 assets\minecraft\models\block\smooth_stone.json
-1519a7670a4d4dc84774d0224d558017282c148f assets\nblb\models\block\stone_wall_side.json
 97d7dc3dc5ec284035256bab3157dba43dca45dc assets\nblb\blockstates\calcite_stairs.json
+1519a7670a4d4dc84774d0224d558017282c148f assets\nblb\models\block\stone_wall_side.json
 a85f076ec716e06c9dba328f508dbf2fde46ae6d assets\nblb\models\block\calcite_wall_inventory.json
 f4bda3b2f9cef8d218e651a7fb1b592df49c8266 assets\nblb\models\block\smooth_stone_wall_inventory.json
-61fbcfde2562edca4133b3f2b83a9af190d7f2f9 assets\nblb\models\block\chiseled_calcite.json
+517ffba986701f20c8c3f415c1d7e6854115bff0 assets\nblb\models\block\chiseled_calcite.json
 4f9e683dd39a73f3365b227ef8add8eea05c0858 assets\nblb\models\block\calcite_slab_top.json
 d94c8b5640e259df44f6b59995d9e23bd1239b6b assets\nblb\models\block\calcite_stairs_inner.json
 97317a58b19ce67c1e56c810204ad98d00020627 assets\minecraft\models\block\stone_mirrored.json
@@ -58,8 +58,8 @@ ba15828161d321a283cacc6077d3c5d216b29d37 assets\nblb\models\item\polished_andesi
 baf402a9ac7616f05e1f958db827e5d4528831db assets\nblb\blockstates\smooth_stone_wall.json
 dd3819992d0cb6d1c03814efe5418cb50ae49324 assets\nblb\models\block\polished_granite_wall_post.json
 a31082ab16243020e00b35cea016a73013805522 assets\nblb\models\block\polished_diorite_wall_side_tall.json
-f4d25b3dbdcdffc02a3109a6646c19a6f2007554 assets\minecraft\models\block\calcite.json
 90b72de689b1fe7aa593c2940efb9d5328535f64 assets\nblb\models\block\smooth_stone_stairs_outer.json
+f4d25b3dbdcdffc02a3109a6646c19a6f2007554 assets\minecraft\models\block\calcite.json
 49e9d49bddc3e8e29c2c2bc7213b2cf6162a0987 assets\nblb\models\item\calcite_wall.json
 06b617d55b25f557f13b2ed427234ff11a676902 assets\nblb\models\item\stone_wall.json
 9ff16e01b04558b0149a98ded570813b347599b4 assets\nblb\models\block\smooth_stone_wall_side_tall.json

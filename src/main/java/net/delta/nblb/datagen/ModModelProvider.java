@@ -5,10 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.Block;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
-import net.minecraft.data.client.TextureMap;
+import net.minecraft.data.client.*;
 import net.minecraft.util.Identifier;
 import com.google.gson.JsonElement;
 import java.util.function.BiConsumer;
@@ -21,7 +18,18 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-
+        blockStateModelGenerator.blockStateCollector.accept(
+                BlockStateModelGenerator.createSingletonBlockState(
+                        ModBlocks.CHISELED_CALCITE,
+                        Models.CUBE_BOTTOM_TOP.upload(
+                                ModBlocks.CHISELED_CALCITE,
+                                TextureMap.of(TextureKey.SIDE, Identifier.of("nblb", "block/chiseled_calcite_side"))
+                                        .put(TextureKey.TOP, Identifier.of("nblb", "block/chiseled_calcite_top"))
+                                        .put(TextureKey.BOTTOM, Identifier.of("nblb", "block/chiseled_calcite_top")),
+                                blockStateModelGenerator.modelCollector
+                        )
+                )
+        );
         BlockStateModelGenerator.BlockTexturePool polishedAndesitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.POLISHED_ANDESITE);
         BlockStateModelGenerator.BlockTexturePool polishedDioritePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.POLISHED_DIORITE);
         BlockStateModelGenerator.BlockTexturePool polishedGranitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.POLISHED_GRANITE);
