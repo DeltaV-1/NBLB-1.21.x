@@ -24,6 +24,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CALCITE_SLAB);
         addDrop(ModBlocks.CALCITE_WALL);
         addDrop(ModBlocks.CHISELED_CALCITE);
+        addDrop(ModBlocks.POLISHED_CALCITE);
+        addDrop(ModBlocks.POLISHED_CALCITE_STAIRS);
+        addDrop(ModBlocks.POLISHED_CALCITE_SLAB);
+        addDrop(ModBlocks.POLISHED_CALCITE_WALL);
 
     }
 

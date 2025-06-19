@@ -9,6 +9,10 @@
     "nblb:calcite_stairs",
     "nblb:calcite_slab",
     "nblb:calcite_wall",
-    "nblb:chiseled_calcite"
+    "nblb:chiseled_calcite",
+    "nblb:polished_calcite",
+    "nblb:polished_calcite_wall",
+    "nblb:polished_calcite_stairs",
+    "nblb:polished_calcite_slab"
   ]
 }

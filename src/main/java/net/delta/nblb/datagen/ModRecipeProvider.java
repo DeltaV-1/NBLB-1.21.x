@@ -63,6 +63,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('S', Items.CALCITE)
                 .criterion(hasItem(Items.CALCITE), conditionsFromItem(Items.CALCITE))
                 .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE_WALL, 6)  // <- sets output count
+                .pattern("SSS")
+                .pattern("SSS")
+                .input('S', ModBlocks.POLISHED_CALCITE)
+                .criterion(hasItem(ModBlocks.POLISHED_CALCITE), conditionsFromItem(ModBlocks.POLISHED_CALCITE))
+                .offerTo(recipeExporter);
 
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SMOOTH_STONE_STAIRS, 4)  // <- sets output count
@@ -107,7 +113,32 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('S', ModBlocks.CALCITE_SLAB)
                 .criterion(hasItem(ModBlocks.CALCITE_SLAB), conditionsFromItem(ModBlocks.CALCITE_SLAB))
                 .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE, 4)  // <- sets output count
+                .pattern("SS")
+                .pattern("SS")
+                .input('S', Blocks.CALCITE)
+                .criterion(hasItem(Blocks.CALCITE), conditionsFromItem(Blocks.CALCITE))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE_SLAB, 6)  // <- sets output count
+                .pattern("SSS")
+                .input('S', ModBlocks.POLISHED_CALCITE)
+                .criterion(hasItem(ModBlocks.POLISHED_CALCITE), conditionsFromItem(ModBlocks.POLISHED_CALCITE))
+                .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE_STAIRS, 4)  // <- sets output count
+                .pattern("S  ")
+                .pattern("SS ")
+                .pattern("SSS")
+                .input('S', ModBlocks.POLISHED_CALCITE)
+                .criterion(hasItem(ModBlocks.POLISHED_CALCITE), conditionsFromItem(ModBlocks.POLISHED_CALCITE))
+                .offerTo(recipeExporter, Identifier.of("nblb", "polished_calcite_stairs_left"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE_STAIRS, 4)  // <- sets output count
+                .pattern("  S")
+                .pattern(" SS")
+                .pattern("SSS")
+                .input('S', ModBlocks.POLISHED_CALCITE)
+                .criterion(hasItem(ModBlocks.POLISHED_CALCITE), conditionsFromItem(ModBlocks.POLISHED_CALCITE))
+                .offerTo(recipeExporter, Identifier.of("nblb", "polished_calcite_stairs_right"));
 
         offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.SMOOTH_STONE_STAIRS, Items.SMOOTH_STONE, 1);
         offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.SMOOTH_STONE_WALL, Items.SMOOTH_STONE, 1);
@@ -122,5 +153,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.CALCITE_STAIRS, Items.CALCITE, 1);
         offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.CALCITE_WALL, Items.CALCITE, 1);
         offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.CHISELED_CALCITE, Items.CALCITE, 1);
+        offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE, Items.CALCITE, 1);
+        offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE_SLAB, Items.CALCITE, 2);
+        offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE_SLAB, ModBlocks.POLISHED_CALCITE, 2);
+        offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE_STAIRS, Items.CALCITE, 1);
+        offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE_STAIRS, ModBlocks.POLISHED_CALCITE, 1);
+        offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE_WALL, Items.CALCITE, 1);
+        offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE_WALL, ModBlocks.POLISHED_CALCITE, 1);
         }
     }

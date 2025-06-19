@@ -1,11 +1,15 @@
-// 1.21	2025-06-19T11:54:01.4760462	NBLB/Block Loot Tables
+// 1.21	2025-06-19T12:20:01.6914451	NBLB/Block Loot Tables
+01e9560cbcbb0a268fe189a2ff788b9cdb41e830 data\nblb\loot_table\blocks\calcite_stairs.json
+62b545dae97c9042605f2962ba039d64a7c0b8b9 data\nblb\loot_table\blocks\polished_calcite_stairs.json
+cc2de52f0ec087c433d07f76f729f2f5b003d507 data\nblb\loot_table\blocks\polished_calcite.json
+8510f1cdb6965f3e23abf39d8cc7fa5f22f34d87 data\nblb\loot_table\blocks\smooth_stone_wall.json
+40b8d8782654b3fd59e5928d5cb7ef560fb66edc data\nblb\loot_table\blocks\polished_granite_wall.json
+7dfbaecc8b472bfbeef27271887efb2b6c14d35a data\nblb\loot_table\blocks\chiseled_calcite.json
 42a8f9583811821d1d13f8b5809f4ee33514dccc data\nblb\loot_table\blocks\polished_diorite_wall.json
 d6de91beaa6a36e12b3bd193edfd06218795fa47 data\nblb\loot_table\blocks\calcite_wall.json
-01e9560cbcbb0a268fe189a2ff788b9cdb41e830 data\nblb\loot_table\blocks\calcite_stairs.json
+f8dbd20813fd6c76b4412ae199f2b4443262e551 data\nblb\loot_table\blocks\polished_calcite_wall.json
 224a18dd5298d15bfdaaa9024962a14cd87f7a47 data\nblb\loot_table\blocks\smooth_stone_stairs.json
-8510f1cdb6965f3e23abf39d8cc7fa5f22f34d87 data\nblb\loot_table\blocks\smooth_stone_wall.json
 91be726b55b8fac798fe61f7546dd05580396411 data\nblb\loot_table\blocks\stone_wall.json
-40b8d8782654b3fd59e5928d5cb7ef560fb66edc data\nblb\loot_table\blocks\polished_granite_wall.json
+cf9993590acf33ace0704ba640aa058cfaa06afe data\nblb\loot_table\blocks\polished_calcite_slab.json
 b1d308474f2dc8f0097c4e678a8ba66ad8148d4a data\nblb\loot_table\blocks\polished_andesite_wall.json
-7dfbaecc8b472bfbeef27271887efb2b6c14d35a data\nblb\loot_table\blocks\chiseled_calcite.json
 fc68c06852b201e71b99678d786427046266886b data\nblb\loot_table\blocks\calcite_slab.json

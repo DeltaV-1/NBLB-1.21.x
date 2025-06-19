@@ -25,18 +25,25 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.CALCITE_STAIRS)
                 .add(ModBlocks.CALCITE_SLAB)
                 .add(ModBlocks.CALCITE_WALL)
-                .add(ModBlocks.CHISELED_CALCITE);
+                .add(ModBlocks.CHISELED_CALCITE)
+                .add(ModBlocks.POLISHED_CALCITE)
+                .add(ModBlocks.POLISHED_CALCITE_WALL)
+                .add(ModBlocks.POLISHED_CALCITE_STAIRS)
+                .add(ModBlocks.POLISHED_CALCITE_SLAB);
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.POLISHED_ANDESITE_WALL)
                 .add(ModBlocks.POLISHED_DIORITE_WALL)
                 .add(ModBlocks.POLISHED_GRANITE_WALL)
                 .add(ModBlocks.SMOOTH_STONE_WALL)
                 .add(ModBlocks.STONE_WALL)
-                .add(ModBlocks.CALCITE_WALL);
+                .add(ModBlocks.CALCITE_WALL)
+                .add(ModBlocks.POLISHED_CALCITE_WALL);
         getOrCreateTagBuilder(BlockTags.STAIRS)
                 .add(ModBlocks.SMOOTH_STONE_STAIRS)
-                .add(ModBlocks.CALCITE_STAIRS);
+                .add(ModBlocks.CALCITE_STAIRS)
+                .add(ModBlocks.POLISHED_CALCITE_STAIRS);
         getOrCreateTagBuilder(BlockTags.SLABS)
-                .add(ModBlocks.CALCITE_SLAB);
+                .add(ModBlocks.CALCITE_SLAB)
+                .add(ModBlocks.POLISHED_CALCITE_SLAB);
     }
 }

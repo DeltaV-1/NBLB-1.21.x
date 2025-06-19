@@ -1,5 +1,5 @@
-// 1.21	2025-06-19T11:54:01.4810643	NBLB/Tags for minecraft:block
-18a62f1bc24c15725020f61b4e3177cb59019a04 data\minecraft\tags\block\slabs.json
-22a649386059a121f0ca8455fb4dc9a34a47e7e7 data\minecraft\tags\block\mineable\pickaxe.json
-508c44209b4fd37746596f043ee56ebe6d2471f9 data\minecraft\tags\block\walls.json
-3041ddd48f94991e5e2a504b9474b974980208c0 data\minecraft\tags\block\stairs.json
+// 1.21	2025-06-19T12:20:01.6935451	NBLB/Tags for minecraft:block
+674e5c6f8b360d983230b0fdf1f8db1eca334fae data\minecraft\tags\block\slabs.json
+ba0a0dbc131c4d687a224cf32533a9147fb723bc data\minecraft\tags\block\mineable\pickaxe.json
+1c193425e9f30780b3e376a39a7f4aa90efdd912 data\minecraft\tags\block\walls.json
+f8e1c3096ce76fa3cd5f1c630ed0819444a58a79 data\minecraft\tags\block\stairs.json
