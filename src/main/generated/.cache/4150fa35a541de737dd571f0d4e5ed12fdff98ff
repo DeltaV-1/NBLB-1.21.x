@@ -1,4 +1,4 @@
-// 1.21.4	-999999999-01-01T00:00:00	NBLB/Model Definitions
+// 1.21.5	-999999999-01-01T00:00:00	NBLB/Model Definitions
 ae4f7ccb2e5e20175316cd027166d0f0caaa780b assets/minecraft/blockstates/calcite.json
 081a3703fe9d75fd243d7c05495d47aafbb3387a assets/minecraft/blockstates/polished_andesite.json
 99f4cc5c68bc06411d573fe5a3cd2cd04ecd6819 assets/minecraft/blockstates/polished_diorite.json
@@ -49,7 +49,7 @@ a85f076ec716e06c9dba328f508dbf2fde46ae6d assets/nblb/models/block/calcite_wall_i
 34a5c094db05cd118925a91d420313e16e5d678c assets/nblb/models/block/calcite_wall_post.json
 4bf348805d045b1700a46c148bffb43ac32a20cc assets/nblb/models/block/calcite_wall_side.json
 42c6ad051abaa26727fcbfe7d003f39b358cff9a assets/nblb/models/block/calcite_wall_side_tall.json
-517ffba986701f20c8c3f415c1d7e6854115bff0 assets/nblb/models/block/chiseled_calcite.json
+e30952e9668d22587dbb9ec5269f5f6782c9803e assets/nblb/models/block/chiseled_calcite.json
 4f4f37e4572aa07b6de6bd970974a2aee41df9a0 assets/nblb/models/block/polished_andesite_wall_inventory.json
 e62395f79bc036e1edfb8594142c4f8f8819ac32 assets/nblb/models/block/polished_andesite_wall_post.json
 7c7499d791c595419549609c7d4fefb5fa573882 assets/nblb/models/block/polished_andesite_wall_side.json

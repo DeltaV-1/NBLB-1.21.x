@@ -1,4 +1,4 @@
-// 1.21.4	-999999999-01-01T00:00:00	NBLB/Block Loot Tables
+// 1.21.5	-999999999-01-01T00:00:00	NBLB/Block Loot Tables
 fc68c06852b201e71b99678d786427046266886b data/nblb/loot_table/blocks/calcite_slab.json
 01e9560cbcbb0a268fe189a2ff788b9cdb41e830 data/nblb/loot_table/blocks/calcite_stairs.json
 d6de91beaa6a36e12b3bd193edfd06218795fa47 data/nblb/loot_table/blocks/calcite_wall.json

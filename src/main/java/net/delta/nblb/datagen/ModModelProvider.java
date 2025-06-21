@@ -4,11 +4,8 @@ import net.delta.nblb.block.ModBlocks;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.Block;
 import net.minecraft.client.data.*;
 import net.minecraft.util.Identifier;
-import com.google.gson.JsonElement;
-import java.util.function.BiConsumer;
 
 
 public class ModModelProvider extends FabricModelProvider {
@@ -18,17 +15,9 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.blockStateCollector.accept(
-                BlockStateModelGenerator.createSingletonBlockState(
-                        ModBlocks.CHISELED_CALCITE,
-                        Models.CUBE_BOTTOM_TOP.upload(
-                                ModBlocks.CHISELED_CALCITE,
-                                TextureMap.of(TextureKey.SIDE, Identifier.of("nblb", "block/chiseled_calcite_side"))
-                                        .put(TextureKey.TOP, Identifier.of("nblb", "block/chiseled_calcite_top"))
-                                        .put(TextureKey.BOTTOM, Identifier.of("nblb", "block/chiseled_calcite_top")),
-                                blockStateModelGenerator.modelCollector
-                        )
-                )
+        blockStateModelGenerator.registerSingleton(
+                ModBlocks.CHISELED_CALCITE,
+                TexturedModel.CUBE_BOTTOM_TOP
         );
 
 

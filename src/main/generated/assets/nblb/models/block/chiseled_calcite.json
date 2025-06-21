@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "nblb:block/chiseled_calcite_top",
+    "bottom": "nblb:block/chiseled_calcite_bottom",
     "side": "nblb:block/chiseled_calcite_side",
     "top": "nblb:block/chiseled_calcite_top"
   }
