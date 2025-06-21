@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "S": {
-      "item": "nblb:polished_calcite"
-    }
+    "S": "nblb:polished_calcite"
   },
   "pattern": [
     "SSS"

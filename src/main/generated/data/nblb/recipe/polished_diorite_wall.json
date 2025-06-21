@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "P": {
-      "item": "minecraft:polished_diorite"
-    }
+    "P": "minecraft:polished_diorite"
   },
   "pattern": [
     "PPP",

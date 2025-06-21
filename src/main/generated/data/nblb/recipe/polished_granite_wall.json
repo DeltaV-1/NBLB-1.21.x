@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "P": {
-      "item": "minecraft:polished_granite"
-    }
+    "P": "minecraft:polished_granite"
   },
   "pattern": [
     "PPP",

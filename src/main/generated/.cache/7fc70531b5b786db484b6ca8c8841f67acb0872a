@@ -1,6 +1,6 @@
-// 1.21	2025-06-19T12:20:01.6914451	NBLB/Block Loot Tables
-01e9560cbcbb0a268fe189a2ff788b9cdb41e830 data\nblb\loot_table\blocks\calcite_stairs.json
+// 1.21.3	2025-06-20T20:00:27.0667539	NBLB/Block Loot Tables
 62b545dae97c9042605f2962ba039d64a7c0b8b9 data\nblb\loot_table\blocks\polished_calcite_stairs.json
+01e9560cbcbb0a268fe189a2ff788b9cdb41e830 data\nblb\loot_table\blocks\calcite_stairs.json
 cc2de52f0ec087c433d07f76f729f2f5b003d507 data\nblb\loot_table\blocks\polished_calcite.json
 8510f1cdb6965f3e23abf39d8cc7fa5f22f34d87 data\nblb\loot_table\blocks\smooth_stone_wall.json
 40b8d8782654b3fd59e5928d5cb7ef560fb66edc data\nblb\loot_table\blocks\polished_granite_wall.json

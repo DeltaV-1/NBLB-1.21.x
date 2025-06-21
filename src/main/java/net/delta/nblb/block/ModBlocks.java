@@ -9,44 +9,85 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
     public static final Block CHISELED_CALCITE = registerBlock("chiseled_calcite",
-            new Block(AbstractBlock.Settings.create().strength(0.575f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+            new Block(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "chiseled_calcite")))
+                    .strength(0.575f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+
     public static final Block POLISHED_CALCITE = registerBlock("polished_calcite",
-            new Block(AbstractBlock.Settings.create().strength(0.575f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+            new Block(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "polished_calcite")))
+                    .strength(0.575f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
 
     public static final Block POLISHED_ANDESITE_WALL = registerBlock("polished_andesite_wall",
-            new WallBlock(AbstractBlock.Settings.create().strength(1.15f).requiresTool()));
+            new WallBlock(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "polished_andesite_wall")))
+                    .strength(1.15f).requiresTool()));
+
     public static final Block POLISHED_DIORITE_WALL = registerBlock("polished_diorite_wall",
-            new WallBlock(AbstractBlock.Settings.create().strength(1.15f).requiresTool()));
+            new WallBlock(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "polished_diorite_wall")))
+                    .strength(1.15f).requiresTool()));
+
     public static final Block POLISHED_GRANITE_WALL = registerBlock("polished_granite_wall",
-            new WallBlock(AbstractBlock.Settings.create().strength(1.15f).requiresTool()));
+            new WallBlock(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "polished_granite_wall")))
+                    .strength(1.15f).requiresTool()));
+
     public static final Block SMOOTH_STONE_WALL = registerBlock("smooth_stone_wall",
-            new WallBlock(AbstractBlock.Settings.create().strength(1.15f).requiresTool()));
+            new WallBlock(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "smooth_stone_wall")))
+                    .strength(1.15f).requiresTool()));
+
     public static final Block STONE_WALL = registerBlock("stone_wall",
-            new WallBlock(AbstractBlock.Settings.create().strength(1.15f).requiresTool()));
+            new WallBlock(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "stone_wall")))
+                    .strength(1.15f).requiresTool()));
+
     public static final Block CALCITE_WALL = registerBlock("calcite_wall",
-            new WallBlock(AbstractBlock.Settings.create().strength(0.575f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+            new WallBlock(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "calcite_wall")))
+                    .strength(0.575f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+
     public static final Block POLISHED_CALCITE_WALL = registerBlock("polished_calcite_wall",
-            new WallBlock(AbstractBlock.Settings.create().strength(0.575f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+            new WallBlock(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "polished_calcite_wall")))
+                    .strength(0.575f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
 
     public static final Block SMOOTH_STONE_STAIRS = registerBlock("smooth_stone_stairs",
             new StairsBlock(Blocks.SMOOTH_STONE.getDefaultState(),
-                    AbstractBlock.Settings.create().strength(1.15f).requiresTool()));
+                    AbstractBlock.Settings.create().
+                            registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "smooth_stone_stairs")))
+                            .strength(1.15f).requiresTool()));
+
     public static final Block CALCITE_STAIRS = registerBlock("calcite_stairs",
             new StairsBlock(Blocks.CALCITE.getDefaultState(),
-                    AbstractBlock.Settings.create().strength(0.575f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+                    AbstractBlock.Settings.create().
+                            registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "calcite_stairs")))
+                            .strength(0.575f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+
     public static final Block POLISHED_CALCITE_STAIRS = registerBlock("polished_calcite_stairs",
             new StairsBlock(Blocks.CALCITE.getDefaultState(),
-                    AbstractBlock.Settings.create().strength(0.575f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+                    AbstractBlock.Settings.create().
+                            registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "polished_calcite_stairs")))
+                            .strength(0.575f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+
     public static final Block CALCITE_SLAB = registerBlock("calcite_slab",
-            new SlabBlock(AbstractBlock.Settings.create().strength(0.575f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+            new SlabBlock(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "calcite_slab")))
+                    .strength(0.575f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+
     public static final Block POLISHED_CALCITE_SLAB = registerBlock("polished_calcite_slab",
-            new SlabBlock(AbstractBlock.Settings.create().strength(0.575f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+            new SlabBlock(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "polished_calcite_slab")))
+                    .strength(0.575f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
 
 
     private static Block registerBlock(String name, Block block) {
@@ -56,7 +97,8 @@ public class ModBlocks {
 
     private static void registerBlockItem(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(NBLB.MOD_ID, name),
-                new BlockItem(block, new Item.Settings()));
+                new BlockItem(block, new Item.Settings().
+                        registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(NBLB.MOD_ID, name)))));
     }
 
     public static void registerModBlocks() {

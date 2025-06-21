@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "nblb:polished_calcite"
-  },
+  "ingredient": "nblb:polished_calcite",
   "result": {
     "count": 1,
     "id": "nblb:polished_calcite_wall"

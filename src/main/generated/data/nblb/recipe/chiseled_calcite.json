@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "S": {
-      "item": "nblb:calcite_slab"
-    }
+    "S": "nblb:calcite_slab"
   },
   "pattern": [
     "S",
