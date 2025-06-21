@@ -1,11 +1,11 @@
 package net.delta.nblb.datagen;
 
 import net.delta.nblb.block.ModBlocks;
+import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.Block;
-import net.minecraft.data.client.*;
+import net.minecraft.client.data.*;
 import net.minecraft.util.Identifier;
 import com.google.gson.JsonElement;
 import java.util.function.BiConsumer;
