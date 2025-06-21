@@ -12,5 +12,8 @@
   "item.nblb.polished_calcite": "Polished Calcite",
   "item.nblb.polished_calcite_stairs": "Polished Calcite Stairs",
   "item.nblb.polished_calcite_slab": "Polished Calcite Slab",
-  "item.nblb.polished_calcite_wall": "Polished Calcite Wall"
+  "item.nblb.polished_calcite_wall": "Polished Calcite Wall",
+  "item.nblb.end_stone_wall": "End Stone Wall",
+  "item.nblb.end_stone_slab": "End Stone Slab",
+  "item.nblb.end_stone_stairs": "End Stone Stairs"
 }

@@ -89,6 +89,22 @@ public class ModBlocks {
                     registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "polished_calcite_slab")))
                     .strength(0.575f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
 
+    public static final Block END_STONE_SLAB = registerBlock("end_stone_slab",
+            new SlabBlock(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "end_stone_slab")))
+                    .strength(3f, 9f).requiresTool()));
+
+    public static final Block END_STONE_STAIRS = registerBlock("end_stone_stairs",
+            new StairsBlock(Blocks.END_STONE.getDefaultState(),
+                    AbstractBlock.Settings.create().
+                            registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "end_stone_stairs")))
+                            .strength(3f, 9f).requiresTool()));
+
+    public static final Block END_STONE_WALL = registerBlock("end_stone_wall",
+            new WallBlock(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "end_stone_wall")))
+                    .strength(3f, 9f).requiresTool()));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -120,6 +136,9 @@ public class ModBlocks {
             entries.addAfter(ModBlocks.POLISHED_CALCITE, ModBlocks.POLISHED_CALCITE_STAIRS);
             entries.addAfter(ModBlocks.POLISHED_CALCITE_STAIRS, ModBlocks.POLISHED_CALCITE_SLAB);
             entries.addAfter(ModBlocks.POLISHED_CALCITE_SLAB, ModBlocks.POLISHED_CALCITE_WALL);
+            entries.addAfter(Blocks.END_STONE, ModBlocks.END_STONE_STAIRS);
+            entries.addAfter(ModBlocks.END_STONE_STAIRS, ModBlocks.END_STONE_SLAB);
+            entries.addAfter(ModBlocks.END_STONE_SLAB, ModBlocks.END_STONE_WALL);
         });
     }
 }

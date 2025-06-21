@@ -1,5 +1,5 @@
 // 1.21.6	-999999999-01-01T00:00:00	NBLB/Tags for minecraft:block
-ba0a0dbc131c4d687a224cf32533a9147fb723bc data/minecraft/tags/block/mineable/pickaxe.json
-674e5c6f8b360d983230b0fdf1f8db1eca334fae data/minecraft/tags/block/slabs.json
-f8e1c3096ce76fa3cd5f1c630ed0819444a58a79 data/minecraft/tags/block/stairs.json
-1c193425e9f30780b3e376a39a7f4aa90efdd912 data/minecraft/tags/block/walls.json
+e44ed3f4ead6702a458e3cb1880dfbe386032347 data/minecraft/tags/block/mineable/pickaxe.json
+6d43f4b2cbfa9bea8152776e77023431b583ea87 data/minecraft/tags/block/slabs.json
+41b519f0f83e83b9f3e8ea99d632459be4909d9f data/minecraft/tags/block/stairs.json
+88c08c24146d4e5acffe2d9a2a1ba7c4255789be data/minecraft/tags/block/walls.json

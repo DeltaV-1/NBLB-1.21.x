@@ -73,7 +73,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input('S', ModBlocks.POLISHED_CALCITE)
                         .criterion(hasItem(ModBlocks.POLISHED_CALCITE), conditionsFromItem(ModBlocks.POLISHED_CALCITE))
                         .offerTo(recipeExporter);
-
+                createShaped(RecipeCategory.MISC, ModBlocks.END_STONE_WALL, 6)  // <- sets output count
+                        .pattern("SSS")
+                        .pattern("SSS")
+                        .input('S', Blocks.END_STONE)
+                        .criterion(hasItem(Blocks.END_STONE), conditionsFromItem(Blocks.END_STONE))
+                        .offerTo(recipeExporter);
 
                 createShaped(RecipeCategory.MISC, ModBlocks.SMOOTH_STONE_STAIRS, 4)  // <- sets output count
                         .pattern("S  ")
@@ -128,6 +133,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input('S', ModBlocks.POLISHED_CALCITE)
                         .criterion(hasItem(ModBlocks.POLISHED_CALCITE), conditionsFromItem(ModBlocks.POLISHED_CALCITE))
                         .offerTo(recipeExporter);
+                createShaped(RecipeCategory.MISC, ModBlocks.END_STONE_SLAB, 6)  // <- sets output count
+                        .pattern("SSS")
+                        .input('S', Blocks.END_STONE)
+                        .criterion(hasItem(Blocks.END_STONE), conditionsFromItem(Blocks.END_STONE))
+                        .offerTo(recipeExporter);
 
                 createShaped(RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE_STAIRS, 4)  // <- sets output count
                         .pattern("S  ")
@@ -143,6 +153,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input('S', ModBlocks.POLISHED_CALCITE)
                         .criterion(hasItem(ModBlocks.POLISHED_CALCITE), conditionsFromItem(ModBlocks.POLISHED_CALCITE))
                         .offerTo(recipeExporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of("nblb", "polished_calcite_stairs_right")));
+
+
+                createShaped(RecipeCategory.MISC, ModBlocks.END_STONE_STAIRS, 4)  // <- sets output count
+                        .pattern("S  ")
+                        .pattern("SS ")
+                        .pattern("SSS")
+                        .input('S', Blocks.END_STONE)
+                        .criterion(hasItem(Blocks.END_STONE), conditionsFromItem(Blocks.END_STONE))
+                        .offerTo(recipeExporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of("nblb", "end_stone_stairs_left")));
+                createShaped(RecipeCategory.MISC, ModBlocks.END_STONE_STAIRS, 4)  // <- sets output count
+                        .pattern("  S")
+                        .pattern(" SS")
+                        .pattern("SSS")
+                        .input('S', Blocks.END_STONE)
+                        .criterion(hasItem(Blocks.END_STONE), conditionsFromItem(Blocks.END_STONE))
+                        .offerTo(recipeExporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of("nblb", "end_stone_stairs_right")));
 
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.SMOOTH_STONE_STAIRS, Items.SMOOTH_STONE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.SMOOTH_STONE_WALL, Items.SMOOTH_STONE, 1);
@@ -164,6 +190,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE_STAIRS, ModBlocks.POLISHED_CALCITE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE_WALL, Items.CALCITE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE_WALL, ModBlocks.POLISHED_CALCITE, 1);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.END_STONE_SLAB, Blocks.END_STONE, 2);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.END_STONE_STAIRS, Blocks.END_STONE, 1);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.END_STONE_WALL, Blocks.END_STONE, 1);
 
             }
         };
