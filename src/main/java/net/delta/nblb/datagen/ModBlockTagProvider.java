@@ -15,7 +15,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+        valueLookupBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.POLISHED_ANDESITE_WALL)
                 .add(ModBlocks.POLISHED_DIORITE_WALL)
                 .add(ModBlocks.POLISHED_GRANITE_WALL)
@@ -30,7 +30,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.POLISHED_CALCITE_WALL)
                 .add(ModBlocks.POLISHED_CALCITE_STAIRS)
                 .add(ModBlocks.POLISHED_CALCITE_SLAB);
-        getOrCreateTagBuilder(BlockTags.WALLS)
+        valueLookupBuilder(BlockTags.WALLS)
                 .add(ModBlocks.POLISHED_ANDESITE_WALL)
                 .add(ModBlocks.POLISHED_DIORITE_WALL)
                 .add(ModBlocks.POLISHED_GRANITE_WALL)
@@ -38,11 +38,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STONE_WALL)
                 .add(ModBlocks.CALCITE_WALL)
                 .add(ModBlocks.POLISHED_CALCITE_WALL);
-        getOrCreateTagBuilder(BlockTags.STAIRS)
+        valueLookupBuilder(BlockTags.STAIRS)
                 .add(ModBlocks.SMOOTH_STONE_STAIRS)
                 .add(ModBlocks.CALCITE_STAIRS)
                 .add(ModBlocks.POLISHED_CALCITE_STAIRS);
-        getOrCreateTagBuilder(BlockTags.SLABS)
+        valueLookupBuilder(BlockTags.SLABS)
                 .add(ModBlocks.CALCITE_SLAB)
                 .add(ModBlocks.POLISHED_CALCITE_SLAB);
     }

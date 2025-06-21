@@ -15,7 +15,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        getOrCreateTagBuilder(ModTags.Items.EXAMPLE_ITEMS);
+        valueLookupBuilder(ModTags.Items.EXAMPLE_ITEMS);
 
     }
 }
