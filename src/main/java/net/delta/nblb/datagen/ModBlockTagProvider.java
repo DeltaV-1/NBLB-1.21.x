@@ -136,7 +136,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RED_TERRACOTTA_WALL)
                 .add(ModBlocks.TERRACOTTA_WALL)
                 .add(ModBlocks.TERRACOTTA_STAIRS)
-                .add(ModBlocks.TERRACOTTA_SLAB);
+                .add(ModBlocks.TERRACOTTA_SLAB)
+                .add(ModBlocks.CHARCOAL_BLOCK)
+                .add(ModBlocks.NETHERRACK_SLAB)
+                .add(ModBlocks.NETHERRACK_STAIRS)
+                .add(ModBlocks.NETHERRACK_WALL)
+                .add(ModBlocks.RED_NETHER_BRICK_FENCE_GATE)
+                .add(ModBlocks.RED_NETHER_BRICK_FENCE)
+                .add(ModBlocks.NETHER_BRICK_FENCE_GATE);
         valueLookupBuilder(BlockTags.WALLS)
                 .add(ModBlocks.POLISHED_ANDESITE_WALL)
                 .add(ModBlocks.POLISHED_DIORITE_WALL)
@@ -179,7 +186,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BROWN_TERRACOTTA_WALL)
                 .add(ModBlocks.BLACK_TERRACOTTA_WALL)
                 .add(ModBlocks.RED_TERRACOTTA_WALL)
-                .add(ModBlocks.TERRACOTTA_WALL);
+                .add(ModBlocks.TERRACOTTA_WALL)
+                .add(ModBlocks.NETHERRACK_WALL);
         valueLookupBuilder(BlockTags.STAIRS)
                 .add(ModBlocks.SMOOTH_STONE_STAIRS)
                 .add(ModBlocks.CALCITE_STAIRS)
@@ -218,7 +226,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS)
                 .add(ModBlocks.GRAY_TERRACOTTA_STAIRS)
                 .add(ModBlocks.BLACK_TERRACOTTA_STAIRS)
-                .add(ModBlocks.TERRACOTTA_STAIRS);
+                .add(ModBlocks.TERRACOTTA_STAIRS)
+                .add(ModBlocks.NETHERRACK_STAIRS);
         valueLookupBuilder(BlockTags.SLABS)
                 .add(ModBlocks.CALCITE_SLAB)
                 .add(ModBlocks.POLISHED_CALCITE_SLAB)
@@ -256,6 +265,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.LIGHT_GRAY_TERRACOTTA_SLAB)
                 .add(ModBlocks.GRAY_TERRACOTTA_SLAB)
                 .add(ModBlocks.BLACK_TERRACOTTA_SLAB)
-                .add(ModBlocks.TERRACOTTA_SLAB);
+                .add(ModBlocks.TERRACOTTA_SLAB)
+                .add(ModBlocks.NETHERRACK_SLAB);
+        valueLookupBuilder(BlockTags.FENCES)
+                .add(ModBlocks.RED_NETHER_BRICK_FENCE);
+        valueLookupBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.RED_NETHER_BRICK_FENCE_GATE)
+                .add(ModBlocks.NETHER_BRICK_FENCE_GATE);
     }
 }

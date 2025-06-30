@@ -28,6 +28,7 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool stonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.STONE);
         BlockStateModelGenerator.BlockTexturePool calcitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.CALCITE);
         BlockStateModelGenerator.BlockTexturePool polishedCalcitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_CALCITE);
+        BlockStateModelGenerator.BlockTexturePool charcoalBlockPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CHARCOAL_BLOCK);
         BlockStateModelGenerator.BlockTexturePool chiseledCalciteBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CHISELED_CALCITE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool endStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.END_STONE);
         BlockStateModelGenerator.BlockTexturePool calciteBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CALCITE_BRICKS);
@@ -64,6 +65,9 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool lightGrayTerracottaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.LIGHT_GRAY_TERRACOTTA);
         BlockStateModelGenerator.BlockTexturePool blackTerracottaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.BLACK_TERRACOTTA);
         BlockStateModelGenerator.BlockTexturePool terracottaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.TERRACOTTA);
+        BlockStateModelGenerator.BlockTexturePool netherrackPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.NETHERRACK);
+        BlockStateModelGenerator.BlockTexturePool netherBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.NETHER_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool redNetherBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.RED_NETHER_BRICKS);
 
 
         polishedAndesitePool.wall(ModBlocks.POLISHED_ANDESITE_WALL);
@@ -183,6 +187,12 @@ public class ModModelProvider extends FabricModelProvider {
         terracottaPool.wall(ModBlocks.TERRACOTTA_WALL);
         terracottaPool.slab(ModBlocks.TERRACOTTA_SLAB);
         terracottaPool.stairs(ModBlocks.TERRACOTTA_STAIRS);
+        netherrackPool.stairs(ModBlocks.NETHERRACK_STAIRS);
+        netherrackPool.slab(ModBlocks.NETHERRACK_SLAB);
+        netherrackPool.wall(ModBlocks.NETHERRACK_WALL);
+        redNetherBrickPool.fence(ModBlocks.RED_NETHER_BRICK_FENCE);
+        redNetherBrickPool.fenceGate(ModBlocks.RED_NETHER_BRICK_FENCE_GATE);
+        netherBrickPool.fenceGate(ModBlocks.NETHER_BRICK_FENCE_GATE);
     }
 
     @Override

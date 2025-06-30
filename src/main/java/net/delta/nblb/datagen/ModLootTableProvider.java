@@ -135,6 +135,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.TERRACOTTA_SLAB);
         addDrop(ModBlocks.TERRACOTTA_STAIRS);
         addDrop(ModBlocks.CHISELED_CALCITE_BRICKS);
+        addDrop(ModBlocks.CHARCOAL_BLOCK);
+        addDrop(ModBlocks.NETHERRACK_SLAB);
+        addDrop(ModBlocks.NETHERRACK_WALL);
+        addDrop(ModBlocks.NETHERRACK_STAIRS);
+        addDrop(ModBlocks.NETHER_BRICK_FENCE_GATE);
+        addDrop(ModBlocks.RED_NETHER_BRICK_FENCE_GATE);
+        addDrop(ModBlocks.RED_NETHER_BRICK_FENCE);
     }
 
 }

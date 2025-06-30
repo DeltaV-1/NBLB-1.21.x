@@ -120,6 +120,13 @@
     "nblb:red_terracotta_wall",
     "nblb:terracotta_wall",
     "nblb:terracotta_stairs",
-    "nblb:terracotta_slab"
+    "nblb:terracotta_slab",
+    "nblb:charcoal_block",
+    "nblb:netherrack_slab",
+    "nblb:netherrack_stairs",
+    "nblb:netherrack_wall",
+    "nblb:red_nether_brick_fence_gate",
+    "nblb:red_nether_brick_fence",
+    "nblb:nether_brick_fence_gate"
   ]
 }

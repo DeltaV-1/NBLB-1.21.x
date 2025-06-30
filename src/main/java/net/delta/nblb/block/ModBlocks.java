@@ -3,6 +3,7 @@ package net.delta.nblb.block;
 import net.delta.nblb.NBLB;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -14,12 +15,18 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
+
 public class ModBlocks {
 
     public static final Block CHISELED_CALCITE = registerBlock("chiseled_calcite",
             new Block(AbstractBlock.Settings.create().
                     registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "chiseled_calcite")))
                     .strength(0.575f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+
+    public static final Block CHARCOAL_BLOCK = registerBlock("charcoal_block",
+            new Block(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "charcoal_block")))
+                    .strength(5f, 6f).requiresTool().instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block POLISHED_CALCITE = registerBlock("polished_calcite",
             new Block(AbstractBlock.Settings.create().
@@ -600,6 +607,49 @@ public class ModBlocks {
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "terracotta_wall")))
                     .strength(1.25f).requiresTool()));
 
+    public static final Block NETHERRACK_WALL = registerBlock("netherrack_wall",
+            new WallBlock(AbstractBlock.Settings.create()
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "netherrack_wall")))
+                    .sounds(BlockSoundGroup.NETHERRACK).strength(0.4f)));
+
+    public static final Block NETHERRACK_STAIRS = registerBlock("netherrack_stairs",
+            new StairsBlock(Blocks.NETHERRACK.getDefaultState(),
+                    AbstractBlock.Settings.create().
+                            registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "netherrack_stairs")))
+                            .strength(0.4f).sounds(BlockSoundGroup.NETHERRACK).requiresTool()));
+
+    public static final Block NETHERRACK_SLAB = registerBlock("netherrack_slab",
+            new SlabBlock(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "netherrack_slab")))
+                    .strength(0.4f).sounds(BlockSoundGroup.NETHERRACK).requiresTool()));
+
+    public static final Block NETHER_BRICK_FENCE_GATE = registerBlock("nether_brick_fence_gate",
+            new FenceGateBlock(
+                    WoodType.OAK,
+                    Block.Settings.create()
+                            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "nether_brick_fence_gate")))
+                            .strength(2.0f, 6.0f)
+                            .sounds(BlockSoundGroup.NETHER_BRICKS)
+                            .nonOpaque()
+            ));
+    public static final Block RED_NETHER_BRICK_FENCE_GATE = registerBlock("red_nether_brick_fence_gate",
+            new FenceGateBlock(
+                    WoodType.OAK,
+                    Block.Settings.create()
+                            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "red_nether_brick_fence_gate")))
+                            .strength(2.0f, 6.0f)
+                            .sounds(BlockSoundGroup.NETHER_BRICKS)
+                            .nonOpaque()
+            ));
+    public static final Block RED_NETHER_BRICK_FENCE = registerBlock("red_nether_brick_fence",
+            new FenceBlock(
+                    Block.Settings.create()
+                            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "red_nether_brick_fence")))
+                            .strength(2.0f, 6.0f)
+                            .sounds(BlockSoundGroup.NETHER_BRICKS)
+                            .nonOpaque()
+            ));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(NBLB.MOD_ID, name), block);
@@ -639,6 +689,13 @@ public class ModBlocks {
             entries.addAfter(ModBlocks.END_STONE_STAIRS, ModBlocks.END_STONE_SLAB);
             entries.addAfter(ModBlocks.END_STONE_SLAB, ModBlocks.END_STONE_WALL);
             entries.addAfter(ModBlocks.END_STONE_SLAB, ModBlocks.END_STONE_WALL);
+            entries.addAfter(Blocks.COAL_BLOCK, ModBlocks.CHARCOAL_BLOCK);
+            entries.addAfter(Blocks.NETHERRACK, ModBlocks.NETHERRACK_STAIRS);
+            entries.addAfter(ModBlocks.NETHERRACK_STAIRS, ModBlocks.NETHERRACK_SLAB);
+            entries.addAfter(ModBlocks.NETHERRACK_SLAB, ModBlocks.NETHERRACK_WALL);
+            entries.addAfter(Blocks.NETHER_BRICK_FENCE, ModBlocks.NETHER_BRICK_FENCE_GATE);
+            entries.addAfter(Blocks.RED_NETHER_BRICK_WALL, ModBlocks.RED_NETHER_BRICK_FENCE);
+            entries.addAfter(ModBlocks.RED_NETHER_BRICK_FENCE, ModBlocks.RED_NETHER_BRICK_FENCE_GATE);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(entries -> {
             entries.addAfter(Blocks.RED_CONCRETE, ModBlocks.RED_CONCRETE_STAIRS);

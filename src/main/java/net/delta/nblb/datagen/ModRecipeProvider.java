@@ -93,6 +93,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input('S', Items.SMOOTH_STONE)
                         .criterion(hasItem(Items.SMOOTH_STONE), conditionsFromItem(Items.SMOOTH_STONE))
                         .offerTo(recipeExporter);
+                createShaped(RecipeCategory.MISC, ModBlocks.NETHERRACK_STAIRS, 4)
+                        .pattern("S  ")
+                        .pattern("SS ")
+                        .pattern("SSS")
+                        .input('S', Items.NETHERRACK)
+                        .criterion(hasItem(Items.NETHERRACK), conditionsFromItem(Items.NETHERRACK))
+                        .offerTo(recipeExporter);
                 createShaped(RecipeCategory.MISC, ModBlocks.CALCITE_STAIRS, 4)  // <- sets output count
                         .pattern("S  ")
                         .pattern("SS ")
@@ -802,7 +809,53 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input('S', Blocks.TERRACOTTA)
                         .criterion(hasItem(Blocks.TERRACOTTA), conditionsFromItem(Blocks.TERRACOTTA))
                         .offerTo(recipeExporter);
-
+                createShaped(RecipeCategory.MISC, ModBlocks.NETHERRACK_WALL, 6)
+                        .pattern("SSS")
+                        .pattern("SSS")
+                        .input('S', Blocks.NETHERRACK)
+                        .criterion(hasItem(Blocks.NETHERRACK), conditionsFromItem(Blocks.NETHERRACK))
+                        .offerTo(recipeExporter);
+                createShaped(RecipeCategory.MISC, ModBlocks.NETHERRACK_SLAB, 6)
+                        .pattern("SSS")
+                        .input('S', Blocks.NETHERRACK)
+                        .criterion(hasItem(Blocks.NETHERRACK), conditionsFromItem(Blocks.NETHERRACK))
+                        .offerTo(recipeExporter);
+                createShaped(RecipeCategory.MISC, ModBlocks.CHARCOAL_BLOCK, 1)
+                        .pattern("SSS")
+                        .pattern("SSS")
+                        .pattern("SSS")
+                        .input('S', Items.CHARCOAL)
+                        .criterion(hasItem(Items.CHARCOAL), conditionsFromItem(Items.CHARCOAL))
+                        .offerTo(recipeExporter);
+                createShaped(RecipeCategory.MISC, Items.CHARCOAL, 9)
+                        .pattern("S")
+                        .input('S', ModBlocks.CHARCOAL_BLOCK)
+                        .criterion(hasItem(ModBlocks.CHARCOAL_BLOCK), conditionsFromItem(ModBlocks.CHARCOAL_BLOCK))
+                        .offerTo(recipeExporter);
+                createShaped(RecipeCategory.MISC, ModBlocks.NETHER_BRICK_FENCE_GATE, 2)
+                        .pattern("SPS")
+                        .pattern("SPS")
+                        .input('S', Items.NETHER_BRICK)
+                        .input('P', Blocks.NETHER_BRICKS)
+                        .criterion(hasItem(Blocks.NETHER_BRICKS), conditionsFromItem(Blocks.NETHER_BRICKS))
+                        .criterion(hasItem(Items.NETHER_BRICK), conditionsFromItem(Items.NETHER_BRICK))
+                        .offerTo(recipeExporter);
+                createShaped(RecipeCategory.MISC, ModBlocks.RED_NETHER_BRICK_FENCE_GATE, 2)
+                        .pattern("SPS")
+                        .pattern("SPS")
+                        .input('S', Items.NETHER_BRICK)
+                        .input('P', Blocks.RED_NETHER_BRICKS)
+                        .criterion(hasItem(Blocks.RED_NETHER_BRICKS), conditionsFromItem(Blocks.RED_NETHER_BRICKS))
+                        .criterion(hasItem(Items.NETHER_BRICK), conditionsFromItem(Items.NETHER_BRICK))
+                        .offerTo(recipeExporter);
+                createShaped(RecipeCategory.MISC, ModBlocks.RED_NETHER_BRICK_FENCE, 6)
+                        .pattern("SPS")
+                        .pattern("SPS")
+                        .input('S', Blocks.RED_NETHER_BRICKS)
+                        .input('P', Items.NETHER_BRICK)
+                        .criterion(hasItem(Blocks.RED_NETHER_BRICKS), conditionsFromItem(Blocks.RED_NETHER_BRICKS))
+                        .criterion(hasItem(Items.NETHER_BRICK), conditionsFromItem(Items.NETHER_BRICK))
+                        .offerTo(recipeExporter);
 
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.SMOOTH_STONE_STAIRS, Items.SMOOTH_STONE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.SMOOTH_STONE_WALL, Items.SMOOTH_STONE, 1);
@@ -940,6 +993,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.BLACK_TERRACOTTA_WALL, Blocks.BLACK_TERRACOTTA, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.RED_TERRACOTTA_WALL, Blocks.RED_TERRACOTTA, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.TERRACOTTA_WALL, Blocks.TERRACOTTA, 1);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.NETHERRACK_SLAB, Blocks.NETHERRACK, 2);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.NETHERRACK_STAIRS, Blocks.NETHERRACK, 1);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.NETHERRACK_WALL, Blocks.NETHERRACK, 1);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.NETHER_BRICK_FENCE_GATE, Blocks.NETHER_BRICKS, 2);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.RED_NETHER_BRICK_FENCE_GATE, Blocks.RED_NETHER_BRICKS, 2);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.RED_NETHER_BRICK_FENCE, Blocks.RED_NETHER_BRICKS, 2);
+                offerStonecuttingRecipe(RecipeCategory.MISC, Blocks.NETHER_BRICK_FENCE, Blocks.NETHER_BRICKS, 2);
 
             }
         };

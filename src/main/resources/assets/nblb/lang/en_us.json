@@ -119,5 +119,12 @@
   "item.nblb.red_terracotta_wall": "Red Terracotta Wall",
   "item.nblb.terracotta_wall": "Terracotta Wall",
   "item.nblb.terracotta_stairs": "Terracotta Stairs",
-  "item.nblb.terracotta_slab": "Terracotta Slab"
+  "item.nblb.terracotta_slab": "Terracotta Slab",
+  "item.nblb.charcoal_block": "Block of Charcoal",
+  "item.nblb.netherrack_stairs": "Netherrack Stairs",
+  "item.nblb.netherrack_slab": "Netherrack Slab",
+  "item.nblb.netherrack_wall": "Netherrack Wall",
+  "item.nblb.nether_brick_fence_gate": "Nether Brick Fence Gate",
+  "item.nblb.red_nether_brick_fence_gate": "Red Nether Brick Fence Gate",
+  "item.nblb.red_nether_brick_fence": "Red Nether Brick Fence"
 }
