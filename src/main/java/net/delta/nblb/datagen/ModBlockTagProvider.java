@@ -143,7 +143,20 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.NETHERRACK_WALL)
                 .add(ModBlocks.RED_NETHER_BRICK_FENCE_GATE)
                 .add(ModBlocks.RED_NETHER_BRICK_FENCE)
-                .add(ModBlocks.NETHER_BRICK_FENCE_GATE);
+                .add(ModBlocks.NETHER_BRICK_FENCE_GATE)
+                .add(ModBlocks.BASALT_SLAB)
+                .add(ModBlocks.BASALT_STAIRS)
+                .add(ModBlocks.BASALT_WALL)
+                .add(ModBlocks.POLISHED_BASALT_BRICKS)
+                .add(ModBlocks.POLISHED_BASALT_BRICK_SLAB)
+                .add(ModBlocks.POLISHED_BASALT_BRICK_STAIRS)
+                .add(ModBlocks.POLISHED_BASALT_BRICK_WALL)
+                .add(ModBlocks.POLISHED_BASALT_SLAB)
+                .add(ModBlocks.POLISHED_BASALT_STAIRS)
+                .add(ModBlocks.POLISHED_BASALT_WALL)
+                .add(ModBlocks.SMOOTH_BASALT_SLAB)
+                .add(ModBlocks.SMOOTH_BASALT_STAIRS)
+                .add(ModBlocks.SMOOTH_BASALT_WALL);
         valueLookupBuilder(BlockTags.WALLS)
                 .add(ModBlocks.POLISHED_ANDESITE_WALL)
                 .add(ModBlocks.POLISHED_DIORITE_WALL)
@@ -187,7 +200,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BLACK_TERRACOTTA_WALL)
                 .add(ModBlocks.RED_TERRACOTTA_WALL)
                 .add(ModBlocks.TERRACOTTA_WALL)
-                .add(ModBlocks.NETHERRACK_WALL);
+                .add(ModBlocks.NETHERRACK_WALL)
+                .add(ModBlocks.BASALT_WALL)
+                .add(ModBlocks.POLISHED_BASALT_BRICK_WALL)
+                .add(ModBlocks.POLISHED_BASALT_WALL)
+                .add(ModBlocks.SMOOTH_BASALT_WALL);
         valueLookupBuilder(BlockTags.STAIRS)
                 .add(ModBlocks.SMOOTH_STONE_STAIRS)
                 .add(ModBlocks.CALCITE_STAIRS)
@@ -227,7 +244,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.GRAY_TERRACOTTA_STAIRS)
                 .add(ModBlocks.BLACK_TERRACOTTA_STAIRS)
                 .add(ModBlocks.TERRACOTTA_STAIRS)
-                .add(ModBlocks.NETHERRACK_STAIRS);
+                .add(ModBlocks.NETHERRACK_STAIRS)
+                .add(ModBlocks.BASALT_STAIRS)
+                .add(ModBlocks.POLISHED_BASALT_BRICK_STAIRS)
+                .add(ModBlocks.POLISHED_BASALT_STAIRS)
+                .add(ModBlocks.SMOOTH_BASALT_STAIRS);
         valueLookupBuilder(BlockTags.SLABS)
                 .add(ModBlocks.CALCITE_SLAB)
                 .add(ModBlocks.POLISHED_CALCITE_SLAB)
@@ -266,7 +287,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.GRAY_TERRACOTTA_SLAB)
                 .add(ModBlocks.BLACK_TERRACOTTA_SLAB)
                 .add(ModBlocks.TERRACOTTA_SLAB)
-                .add(ModBlocks.NETHERRACK_SLAB);
+                .add(ModBlocks.NETHERRACK_SLAB)
+                .add(ModBlocks.BASALT_SLAB)
+                .add(ModBlocks.POLISHED_BASALT_BRICK_SLAB)
+                .add(ModBlocks.POLISHED_BASALT_SLAB)
+                .add(ModBlocks.SMOOTH_BASALT_SLAB);
         valueLookupBuilder(BlockTags.FENCES)
                 .add(ModBlocks.RED_NETHER_BRICK_FENCE);
         valueLookupBuilder(BlockTags.FENCE_GATES)

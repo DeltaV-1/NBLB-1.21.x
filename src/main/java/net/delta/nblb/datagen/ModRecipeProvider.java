@@ -802,13 +802,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input('S', Blocks.RED_TERRACOTTA)
                         .criterion(hasItem(Blocks.RED_TERRACOTTA), conditionsFromItem(Blocks.RED_TERRACOTTA))
                         .offerTo(recipeExporter);
-
                 createShaped(RecipeCategory.MISC, ModBlocks.TERRACOTTA_WALL, 6)
                         .pattern("SSS")
                         .pattern("SSS")
                         .input('S', Blocks.TERRACOTTA)
                         .criterion(hasItem(Blocks.TERRACOTTA), conditionsFromItem(Blocks.TERRACOTTA))
                         .offerTo(recipeExporter);
+
                 createShaped(RecipeCategory.MISC, ModBlocks.NETHERRACK_WALL, 6)
                         .pattern("SSS")
                         .pattern("SSS")
@@ -820,6 +820,88 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input('S', Blocks.NETHERRACK)
                         .criterion(hasItem(Blocks.NETHERRACK), conditionsFromItem(Blocks.NETHERRACK))
                         .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_BRICKS, 4)
+                        .pattern("SS")
+                        .pattern("SS")
+                        .input('S', Blocks.POLISHED_BASALT)
+                        .criterion(hasItem(Blocks.POLISHED_BASALT), conditionsFromItem(Blocks.POLISHED_BASALT))
+                        .offerTo(recipeExporter);
+                createShaped(RecipeCategory.MISC, ModBlocks.BASALT_SLAB, 6)
+                        .pattern("SSS")
+                        .input('S', Blocks.BASALT)
+                        .criterion(hasItem(Blocks.BASALT), conditionsFromItem(Blocks.BASALT))
+                        .offerTo(recipeExporter);
+                createShaped(RecipeCategory.MISC, ModBlocks.SMOOTH_BASALT_SLAB, 6)
+                        .pattern("SSS")
+                        .input('S', Blocks.SMOOTH_BASALT)
+                        .criterion(hasItem(Blocks.SMOOTH_BASALT), conditionsFromItem(Blocks.SMOOTH_BASALT))
+                        .offerTo(recipeExporter);
+                createShaped(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_SLAB, 6)
+                        .pattern("SSS")
+                        .input('S', Blocks.POLISHED_BASALT)
+                        .criterion(hasItem(Blocks.POLISHED_BASALT), conditionsFromItem(Blocks.POLISHED_BASALT))
+                        .offerTo(recipeExporter);
+                createShaped(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_BRICK_SLAB, 6)
+                        .pattern("SSS")
+                        .input('S', ModBlocks.POLISHED_BASALT_BRICKS)
+                        .criterion(hasItem(ModBlocks.POLISHED_BASALT_BRICKS), conditionsFromItem(ModBlocks.POLISHED_BASALT_BRICKS))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.MISC, ModBlocks.BASALT_STAIRS, 4)
+                        .pattern("S  ")
+                        .pattern("SS ")
+                        .pattern("SSS")
+                        .input('S', Blocks.BASALT)
+                        .criterion(hasItem(Blocks.BASALT), conditionsFromItem(Blocks.BASALT))
+                        .offerTo(recipeExporter);
+                createShaped(RecipeCategory.MISC, ModBlocks.SMOOTH_BASALT_STAIRS, 4)
+                        .pattern("S  ")
+                        .pattern("SS ")
+                        .pattern("SSS")
+                        .input('S', Blocks.SMOOTH_BASALT)
+                        .criterion(hasItem(Blocks.SMOOTH_BASALT), conditionsFromItem(Blocks.SMOOTH_BASALT))
+                        .offerTo(recipeExporter);
+                createShaped(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_STAIRS, 4)
+                        .pattern("S  ")
+                        .pattern("SS ")
+                        .pattern("SSS")
+                        .input('S', Blocks.POLISHED_BASALT)
+                        .criterion(hasItem(Blocks.POLISHED_BASALT), conditionsFromItem(Blocks.POLISHED_BASALT))
+                        .offerTo(recipeExporter);
+                createShaped(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_BRICK_STAIRS, 4)
+                        .pattern("S  ")
+                        .pattern("SS ")
+                        .pattern("SSS")
+                        .input('S', ModBlocks.POLISHED_BASALT_BRICKS)
+                        .criterion(hasItem(ModBlocks.POLISHED_BASALT_BRICKS), conditionsFromItem(ModBlocks.POLISHED_BASALT_BRICKS))
+                        .offerTo(recipeExporter);
+
+                createShaped(RecipeCategory.MISC, ModBlocks.BASALT_WALL, 6)
+                        .pattern("SSS")
+                        .pattern("SSS")
+                        .input('S', Blocks.BASALT)
+                        .criterion(hasItem(Blocks.BASALT), conditionsFromItem(Blocks.BASALT))
+                        .offerTo(recipeExporter);
+                createShaped(RecipeCategory.MISC, ModBlocks.SMOOTH_BASALT_WALL, 6)
+                        .pattern("SSS")
+                        .pattern("SSS")
+                        .input('S', Blocks.SMOOTH_BASALT)
+                        .criterion(hasItem(Blocks.SMOOTH_BASALT), conditionsFromItem(Blocks.SMOOTH_BASALT))
+                        .offerTo(recipeExporter);
+                createShaped(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_WALL, 6)
+                        .pattern("SSS")
+                        .pattern("SSS")
+                        .input('S', Blocks.POLISHED_BASALT)
+                        .criterion(hasItem(Blocks.POLISHED_BASALT), conditionsFromItem(Blocks.POLISHED_BASALT))
+                        .offerTo(recipeExporter);
+                createShaped(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_BRICK_WALL, 6)
+                        .pattern("SSS")
+                        .pattern("SSS")
+                        .input('S', ModBlocks.POLISHED_BASALT_BRICKS)
+                        .criterion(hasItem(ModBlocks.POLISHED_BASALT_BRICKS), conditionsFromItem(ModBlocks.POLISHED_BASALT_BRICKS))
+                        .offerTo(recipeExporter);
+
                 createShaped(RecipeCategory.MISC, ModBlocks.CHARCOAL_BLOCK, 1)
                         .pattern("SSS")
                         .pattern("SSS")
@@ -827,6 +909,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input('S', Items.CHARCOAL)
                         .criterion(hasItem(Items.CHARCOAL), conditionsFromItem(Items.CHARCOAL))
                         .offerTo(recipeExporter);
+
                 createShaped(RecipeCategory.MISC, Items.CHARCOAL, 9)
                         .pattern("S")
                         .input('S', ModBlocks.CHARCOAL_BLOCK)
@@ -857,22 +940,28 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.NETHER_BRICK), conditionsFromItem(Items.NETHER_BRICK))
                         .offerTo(recipeExporter);
 
+
+
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.SMOOTH_STONE_STAIRS, Items.SMOOTH_STONE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.SMOOTH_STONE_WALL, Items.SMOOTH_STONE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.STONE_WALL, Items.STONE, 1);
+
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_ANDESITE_WALL, Items.POLISHED_ANDESITE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_DIORITE_WALL, Items.POLISHED_DIORITE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_GRANITE_WALL, Items.POLISHED_GRANITE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_ANDESITE_WALL, Items.ANDESITE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_DIORITE_WALL, Items.DIORITE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_GRANITE_WALL, Items.GRANITE, 1);
+
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.CALCITE_SLAB, Items.CALCITE, 2);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.CALCITE_STAIRS, Items.CALCITE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.CALCITE_WALL, Items.CALCITE, 1);
+
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.CHISELED_CALCITE, Items.CALCITE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.CHISELED_CALCITE_BRICKS, Items.CALCITE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.CHISELED_CALCITE_BRICKS, ModBlocks.CALCITE_BRICKS, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.CHISELED_CALCITE_BRICKS, ModBlocks.POLISHED_CALCITE, 1);
+
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE, Items.CALCITE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE_SLAB, Items.CALCITE, 2);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE_SLAB, ModBlocks.POLISHED_CALCITE, 2);
@@ -880,9 +969,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE_STAIRS, ModBlocks.POLISHED_CALCITE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE_WALL, Items.CALCITE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE_WALL, ModBlocks.POLISHED_CALCITE, 1);
+
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.END_STONE_SLAB, Blocks.END_STONE, 2);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.END_STONE_STAIRS, Blocks.END_STONE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.END_STONE_WALL, Blocks.END_STONE, 1);
+
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.CALCITE_BRICKS, Blocks.CALCITE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.CALCITE_BRICKS, ModBlocks.POLISHED_CALCITE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.CALCITE_BRICK_STAIRS, Blocks.CALCITE, 1);
@@ -894,6 +985,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.CALCITE_BRICK_SLAB, Blocks.CALCITE, 2);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.CALCITE_BRICK_SLAB, ModBlocks.POLISHED_CALCITE, 2);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.CALCITE_BRICK_SLAB, ModBlocks.CALCITE_BRICKS, 2);
+
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.RED_CONCRETE_SLAB, Blocks.RED_CONCRETE, 2);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.RED_CONCRETE_STAIRS, Blocks.RED_CONCRETE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.ORANGE_CONCRETE_SLAB, Blocks.ORANGE_CONCRETE, 2);
@@ -926,6 +1018,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.GRAY_CONCRETE_STAIRS, Blocks.GRAY_CONCRETE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.BLACK_CONCRETE_SLAB, Blocks.BLACK_CONCRETE, 2);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.BLACK_CONCRETE_STAIRS, Blocks.BLACK_CONCRETE, 1);
+
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.WHITE_CONCRETE_WALL, Blocks.WHITE_CONCRETE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.ORANGE_CONCRETE_WALL, Blocks.ORANGE_CONCRETE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.MAGENTA_CONCRETE_WALL, Blocks.MAGENTA_CONCRETE, 1);
@@ -942,6 +1035,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.BROWN_CONCRETE_WALL, Blocks.BROWN_CONCRETE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.BLACK_CONCRETE_WALL, Blocks.BLACK_CONCRETE, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.RED_CONCRETE_WALL, Blocks.RED_CONCRETE, 1);
+
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.RED_TERRACOTTA_SLAB, Blocks.RED_TERRACOTTA, 2);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.RED_TERRACOTTA_STAIRS, Blocks.RED_TERRACOTTA, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.ORANGE_TERRACOTTA_SLAB, Blocks.ORANGE_TERRACOTTA, 2);
@@ -976,6 +1070,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.BLACK_TERRACOTTA_STAIRS, Blocks.BLACK_TERRACOTTA, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.TERRACOTTA_STAIRS, Blocks.TERRACOTTA, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.TERRACOTTA_SLAB, Blocks.TERRACOTTA, 2);
+
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.WHITE_TERRACOTTA_WALL, Blocks.WHITE_TERRACOTTA, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.ORANGE_TERRACOTTA_WALL, Blocks.ORANGE_TERRACOTTA, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.MAGENTA_TERRACOTTA_WALL, Blocks.MAGENTA_TERRACOTTA, 1);
@@ -993,13 +1088,42 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.BLACK_TERRACOTTA_WALL, Blocks.BLACK_TERRACOTTA, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.RED_TERRACOTTA_WALL, Blocks.RED_TERRACOTTA, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.TERRACOTTA_WALL, Blocks.TERRACOTTA, 1);
+
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.NETHERRACK_SLAB, Blocks.NETHERRACK, 2);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.NETHERRACK_STAIRS, Blocks.NETHERRACK, 1);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.NETHERRACK_WALL, Blocks.NETHERRACK, 1);
+
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.NETHER_BRICK_FENCE_GATE, Blocks.NETHER_BRICKS, 2);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.RED_NETHER_BRICK_FENCE_GATE, Blocks.RED_NETHER_BRICKS, 2);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.RED_NETHER_BRICK_FENCE, Blocks.RED_NETHER_BRICKS, 2);
                 offerStonecuttingRecipe(RecipeCategory.MISC, Blocks.NETHER_BRICK_FENCE, Blocks.NETHER_BRICKS, 2);
+
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.BASALT_STAIRS, Blocks.BASALT, 1);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.BASALT_SLAB, Blocks.BASALT, 2);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.BASALT_WALL, Blocks.BASALT, 1);
+
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.SMOOTH_BASALT_STAIRS, Blocks.SMOOTH_BASALT, 1);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.SMOOTH_BASALT_SLAB, Blocks.SMOOTH_BASALT, 2);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.SMOOTH_BASALT_WALL, Blocks.SMOOTH_BASALT, 1);
+
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_STAIRS, Blocks.BASALT, 1);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_SLAB, Blocks.BASALT, 2);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_WALL, Blocks.BASALT, 1);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_STAIRS, Blocks.POLISHED_BASALT, 1);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_SLAB, Blocks.POLISHED_BASALT, 2);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_WALL, Blocks.POLISHED_BASALT, 1);
+
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_BRICKS, Blocks.BASALT, 1);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_BRICKS, Blocks.POLISHED_BASALT, 1);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_BRICK_STAIRS, Blocks.BASALT, 1);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_BRICK_STAIRS, ModBlocks.POLISHED_BASALT_BRICKS, 1);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_BRICK_SLAB, ModBlocks.POLISHED_BASALT_BRICKS, 2);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_BRICK_WALL, ModBlocks.POLISHED_BASALT_BRICKS, 1);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_BRICK_SLAB, Blocks.BASALT, 2);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_BRICK_WALL, Blocks.BASALT, 1);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_BRICK_STAIRS, Blocks.POLISHED_BASALT, 1);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_BRICK_SLAB, Blocks.POLISHED_BASALT, 2);
+                offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.POLISHED_BASALT_BRICK_WALL, Blocks.POLISHED_BASALT, 1);
 
             }
         };

@@ -1,4 +1,7 @@
-// 1.21.6	-999999999-01-01T00:00:00	NBLB/Block Loot Tables
+// 1.21.7	-999999999-01-01T00:00:00	NBLB/Block Loot Tables
+d28a74a6a9e1384f78f120171196cac9514c5e24 data/nblb/loot_table/blocks/basalt_slab.json
+5ec79a258f603142cdbd507b3cf6193a82652328 data/nblb/loot_table/blocks/basalt_stairs.json
+0d3dcd23d39195bf083d726e122460d0e5c05034 data/nblb/loot_table/blocks/basalt_wall.json
 bedf828913c013826aad7746f148557e63cc4ac3 data/nblb/loot_table/blocks/black_concrete_slab.json
 990d81546e86c4f659a0e2ab9d497d52a61edf4b data/nblb/loot_table/blocks/black_concrete_stairs.json
 966f9915d4bb78a9df100d3d5f747b3b6a49d7d7 data/nblb/loot_table/blocks/black_concrete_wall.json
@@ -89,6 +92,13 @@ c71f1b4293d92927532690accaf55e712fd5c1d3 data/nblb/loot_table/blocks/pink_terrac
 2c96b61fdac38a29349729d98a358aa46abf8086 data/nblb/loot_table/blocks/pink_terracotta_stairs.json
 6d6d0040e86055307ede9b108e8fca51ea994f82 data/nblb/loot_table/blocks/pink_terracotta_wall.json
 b1d308474f2dc8f0097c4e678a8ba66ad8148d4a data/nblb/loot_table/blocks/polished_andesite_wall.json
+8b83508be0701109d8959b71077c5256eb0cf7c5 data/nblb/loot_table/blocks/polished_basalt_brick_slab.json
+10757b7a5a295d8bc18ab5f5b6971810b6781a6c data/nblb/loot_table/blocks/polished_basalt_brick_stairs.json
+04861eead82a15c33ed7f214eb7c506101584f73 data/nblb/loot_table/blocks/polished_basalt_brick_wall.json
+c19d0c75f09299b3eeac725e5dad5cb05b027a37 data/nblb/loot_table/blocks/polished_basalt_bricks.json
+a1a9e660443cd58907758d028e2f72f8faa3f9e4 data/nblb/loot_table/blocks/polished_basalt_slab.json
+0af86b09706e37011cfe6c5bef71b09f20115a10 data/nblb/loot_table/blocks/polished_basalt_stairs.json
+dfe82f3f708e2b2323ecc090ec334df30a125bc5 data/nblb/loot_table/blocks/polished_basalt_wall.json
 cc2de52f0ec087c433d07f76f729f2f5b003d507 data/nblb/loot_table/blocks/polished_calcite.json
 cf9993590acf33ace0704ba640aa058cfaa06afe data/nblb/loot_table/blocks/polished_calcite_slab.json
 62b545dae97c9042605f2962ba039d64a7c0b8b9 data/nblb/loot_table/blocks/polished_calcite_stairs.json
@@ -109,6 +119,9 @@ f2d5fc684a95b6d9d149341aa151338756b27a06 data/nblb/loot_table/blocks/red_nether_
 56b25671077859af1cdbbacf203a8ebfdbc7a83e data/nblb/loot_table/blocks/red_terracotta_slab.json
 dcaeb9cbc63e9aa565079483423648dc26ad12c1 data/nblb/loot_table/blocks/red_terracotta_stairs.json
 4b6215922f34792611203ec4817bd77d157a27f6 data/nblb/loot_table/blocks/red_terracotta_wall.json
+2fb2aa3a6d0cadaddd09a9cb43f8ec2769af53ec data/nblb/loot_table/blocks/smooth_basalt_slab.json
+3de47c9a97780d743cc4ea34f24a8655f32fd9ea data/nblb/loot_table/blocks/smooth_basalt_stairs.json
+c4d752e439af25e903fafae719fd2b68f708a15c data/nblb/loot_table/blocks/smooth_basalt_wall.json
 224a18dd5298d15bfdaaa9024962a14cd87f7a47 data/nblb/loot_table/blocks/smooth_stone_stairs.json
 8510f1cdb6965f3e23abf39d8cc7fa5f22f34d87 data/nblb/loot_table/blocks/smooth_stone_wall.json
 91be726b55b8fac798fe61f7546dd05580396411 data/nblb/loot_table/blocks/stone_wall.json

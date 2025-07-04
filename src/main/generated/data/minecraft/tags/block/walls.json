@@ -42,6 +42,10 @@
     "nblb:black_terracotta_wall",
     "nblb:red_terracotta_wall",
     "nblb:terracotta_wall",
-    "nblb:netherrack_wall"
+    "nblb:netherrack_wall",
+    "nblb:basalt_wall",
+    "nblb:polished_basalt_brick_wall",
+    "nblb:polished_basalt_wall",
+    "nblb:smooth_basalt_wall"
   ]
 }

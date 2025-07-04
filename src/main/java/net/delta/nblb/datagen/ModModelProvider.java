@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.data.*;
-import net.minecraft.util.Identifier;
 
 
 public class ModModelProvider extends FabricModelProvider {
@@ -19,7 +18,6 @@ public class ModModelProvider extends FabricModelProvider {
                 ModBlocks.CHISELED_CALCITE,
                 TexturedModel.CUBE_BOTTOM_TOP
         );
-
 
         BlockStateModelGenerator.BlockTexturePool polishedAndesitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.POLISHED_ANDESITE);
         BlockStateModelGenerator.BlockTexturePool polishedDioritePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.POLISHED_DIORITE);
@@ -68,6 +66,9 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool netherrackPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.NETHERRACK);
         BlockStateModelGenerator.BlockTexturePool netherBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.NETHER_BRICKS);
         BlockStateModelGenerator.BlockTexturePool redNetherBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.RED_NETHER_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool smoothBasaltPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.SMOOTH_BASALT);
+        BlockStateModelGenerator.BlockTexturePool basaltBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_BASALT_BRICKS);
+
 
 
         polishedAndesitePool.wall(ModBlocks.POLISHED_ANDESITE_WALL);
@@ -193,6 +194,14 @@ public class ModModelProvider extends FabricModelProvider {
         redNetherBrickPool.fence(ModBlocks.RED_NETHER_BRICK_FENCE);
         redNetherBrickPool.fenceGate(ModBlocks.RED_NETHER_BRICK_FENCE_GATE);
         netherBrickPool.fenceGate(ModBlocks.NETHER_BRICK_FENCE_GATE);
+        smoothBasaltPool.wall(ModBlocks.SMOOTH_BASALT_WALL);
+        smoothBasaltPool.stairs(ModBlocks.SMOOTH_BASALT_STAIRS);
+        smoothBasaltPool.slab(ModBlocks.SMOOTH_BASALT_SLAB);
+        basaltBrickPool.wall(ModBlocks.POLISHED_BASALT_BRICK_WALL);
+        basaltBrickPool.stairs(ModBlocks.POLISHED_BASALT_BRICK_STAIRS);
+        basaltBrickPool.slab(ModBlocks.POLISHED_BASALT_BRICK_SLAB);
+
+
     }
 
     @Override

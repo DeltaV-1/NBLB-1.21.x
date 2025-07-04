@@ -38,6 +38,10 @@
     "nblb:gray_terracotta_stairs",
     "nblb:black_terracotta_stairs",
     "nblb:terracotta_stairs",
-    "nblb:netherrack_stairs"
+    "nblb:netherrack_stairs",
+    "nblb:basalt_stairs",
+    "nblb:polished_basalt_brick_stairs",
+    "nblb:polished_basalt_stairs",
+    "nblb:smooth_basalt_stairs"
   ]
 }

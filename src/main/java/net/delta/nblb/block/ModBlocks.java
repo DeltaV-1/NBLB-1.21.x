@@ -623,6 +623,54 @@ public class ModBlocks {
                     registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "netherrack_slab")))
                     .strength(0.4f).sounds(BlockSoundGroup.NETHERRACK).requiresTool()));
 
+    public static final Block BASALT_SLAB = registerBlock("basalt_slab",
+            new SlabBlock(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "basalt_slab")))
+                    .strength(1.25f, 4.2f).sounds(BlockSoundGroup.BASALT).requiresTool()));
+
+    public static final Block BASALT_STAIRS = registerBlock("basalt_stairs",
+            new StairsBlock(Blocks.END_STONE.getDefaultState(),
+                    AbstractBlock.Settings.create().
+                            registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "basalt_stairs")))
+                            .strength(1.25f, 4.2f).requiresTool()));
+
+    public static final Block BASALT_WALL = registerBlock("basalt_wall",
+            new WallBlock(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "basalt_wall")))
+                    .strength(1.25f, 4.2f).requiresTool()));
+
+    public static final Block SMOOTH_BASALT_SLAB = registerBlock("smooth_basalt_slab",
+            new SlabBlock(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "smooth_basalt_slab")))
+                    .strength(1.25f, 4.2f).sounds(BlockSoundGroup.BASALT).requiresTool()));
+
+    public static final Block SMOOTH_BASALT_STAIRS = registerBlock("smooth_basalt_stairs",
+            new StairsBlock(Blocks.END_STONE.getDefaultState(),
+                    AbstractBlock.Settings.create().
+                            registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "smooth_basalt_stairs")))
+                            .strength(1.25f, 4.2f).requiresTool()));
+
+    public static final Block SMOOTH_BASALT_WALL = registerBlock("smooth_basalt_wall",
+            new WallBlock(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "smooth_basalt_wall")))
+                    .strength(1.25f, 4.2f).requiresTool()));
+
+    public static final Block POLISHED_BASALT_SLAB = registerBlock("polished_basalt_slab",
+            new SlabBlock(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "polished_basalt_slab")))
+                    .strength(1.25f, 4.2f).sounds(BlockSoundGroup.BASALT).requiresTool()));
+
+    public static final Block POLISHED_BASALT_STAIRS = registerBlock("polished_basalt_stairs",
+            new StairsBlock(Blocks.END_STONE.getDefaultState(),
+                    AbstractBlock.Settings.create().
+                            registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "polished_basalt_stairs")))
+                            .strength(1.25f, 4.2f).requiresTool()));
+
+    public static final Block POLISHED_BASALT_WALL = registerBlock("polished_basalt_wall",
+            new WallBlock(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "polished_basalt_wall")))
+                    .strength(1.25f, 4.2f).requiresTool()));
+
     public static final Block NETHER_BRICK_FENCE_GATE = registerBlock("nether_brick_fence_gate",
             new FenceGateBlock(
                     WoodType.OAK,
@@ -649,6 +697,27 @@ public class ModBlocks {
                             .sounds(BlockSoundGroup.NETHER_BRICKS)
                             .nonOpaque()
             ));
+
+    public static final Block POLISHED_BASALT_BRICKS = registerBlock("polished_basalt_bricks",
+            new Block(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "polished_basalt_bricks")))
+                    .strength(1.25f, 4.2f).requiresTool().sounds(BlockSoundGroup.BASALT)));
+
+    public static final Block POLISHED_BASALT_BRICK_SLAB = registerBlock("polished_basalt_brick_slab",
+            new SlabBlock(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "polished_basalt_brick_slab")))
+                    .strength(1.25f, 4.2f).sounds(BlockSoundGroup.BASALT).requiresTool()));
+
+    public static final Block POLISHED_BASALT_BRICK_STAIRS = registerBlock("polished_basalt_brick_stairs",
+            new StairsBlock(Blocks.END_STONE.getDefaultState(),
+                    AbstractBlock.Settings.create().
+                            registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "polished_basalt_brick_stairs")))
+                            .strength(1.25f, 4.2f).requiresTool()));
+
+    public static final Block POLISHED_BASALT_BRICK_WALL = registerBlock("polished_basalt_brick_wall",
+            new WallBlock(AbstractBlock.Settings.create().
+                    registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(NBLB.MOD_ID, "polished_basalt_brick_wall")))
+                    .strength(1.25f, 4.2f).requiresTool()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -696,6 +765,19 @@ public class ModBlocks {
             entries.addAfter(Blocks.NETHER_BRICK_FENCE, ModBlocks.NETHER_BRICK_FENCE_GATE);
             entries.addAfter(Blocks.RED_NETHER_BRICK_WALL, ModBlocks.RED_NETHER_BRICK_FENCE);
             entries.addAfter(ModBlocks.RED_NETHER_BRICK_FENCE, ModBlocks.RED_NETHER_BRICK_FENCE_GATE);
+            entries.addAfter(Blocks.BASALT, ModBlocks.BASALT_STAIRS);
+            entries.addAfter(ModBlocks.BASALT_STAIRS, ModBlocks.BASALT_SLAB);
+            entries.addAfter(ModBlocks.BASALT_SLAB, ModBlocks.BASALT_WALL);
+            entries.addAfter(Blocks.SMOOTH_BASALT, ModBlocks.SMOOTH_BASALT_STAIRS);
+            entries.addAfter(ModBlocks.SMOOTH_BASALT_STAIRS, ModBlocks.SMOOTH_BASALT_SLAB);
+            entries.addAfter(ModBlocks.SMOOTH_BASALT_SLAB, ModBlocks.SMOOTH_BASALT_WALL);
+            entries.addAfter(Blocks.POLISHED_BASALT, ModBlocks.POLISHED_BASALT_STAIRS);
+            entries.addAfter(ModBlocks.POLISHED_BASALT_STAIRS, ModBlocks.POLISHED_BASALT_SLAB);
+            entries.addAfter(ModBlocks.POLISHED_BASALT_SLAB, ModBlocks.POLISHED_BASALT_WALL);
+            entries.addAfter(ModBlocks.POLISHED_BASALT_WALL, ModBlocks.POLISHED_BASALT_BRICKS);
+            entries.addAfter(ModBlocks.POLISHED_BASALT_BRICKS, ModBlocks.POLISHED_BASALT_BRICK_STAIRS);
+            entries.addAfter(ModBlocks.POLISHED_BASALT_BRICK_STAIRS, ModBlocks.POLISHED_BASALT_BRICK_SLAB);
+            entries.addAfter(ModBlocks.POLISHED_BASALT_BRICK_SLAB, ModBlocks.POLISHED_BASALT_BRICK_WALL);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(entries -> {
             entries.addAfter(Blocks.RED_CONCRETE, ModBlocks.RED_CONCRETE_STAIRS);

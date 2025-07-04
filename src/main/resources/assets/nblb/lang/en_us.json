@@ -126,5 +126,18 @@
   "item.nblb.netherrack_wall": "Netherrack Wall",
   "item.nblb.nether_brick_fence_gate": "Nether Brick Fence Gate",
   "item.nblb.red_nether_brick_fence_gate": "Red Nether Brick Fence Gate",
-  "item.nblb.red_nether_brick_fence": "Red Nether Brick Fence"
+  "item.nblb.red_nether_brick_fence": "Red Nether Brick Fence",
+  "item.nblb.polished_basalt_bricks": "Polished Basalt Bricks",
+  "item.nblb.basalt_slab": "Basalt Slab",
+  "item.nblb.basalt_stairs": "Basalt Stairs",
+  "item.nblb.basalt_wall": "Basalt Wall",
+  "item.nblb.smooth_basalt_slab": "Smooth Basalt Slab",
+  "item.nblb.smooth_basalt_stairs": "Smooth Basalt Stairs",
+  "item.nblb.smooth_basalt_wall": "Smooth Basalt Wall",
+  "item.nblb.polished_basalt_slab": "Polished Basalt Slab",
+  "item.nblb.polished_basalt_stairs": "Polished Basalt Stairs",
+  "item.nblb.polished_basalt_wall": "Polished Basalt Wall",
+  "item.nblb.polished_basalt_brick_slab": "Polished Basalt Brick Slab",
+  "item.nblb.polished_basalt_brick_stairs": "Polished Basalt Brick Stairs",
+  "item.nblb.polished_basalt_brick_wall": "Polished Basalt Brick Wall"
 }

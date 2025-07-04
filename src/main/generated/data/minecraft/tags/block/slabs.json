@@ -37,6 +37,10 @@
     "nblb:gray_terracotta_slab",
     "nblb:black_terracotta_slab",
     "nblb:terracotta_slab",
-    "nblb:netherrack_slab"
+    "nblb:netherrack_slab",
+    "nblb:basalt_slab",
+    "nblb:polished_basalt_brick_slab",
+    "nblb:polished_basalt_slab",
+    "nblb:smooth_basalt_slab"
   ]
 }

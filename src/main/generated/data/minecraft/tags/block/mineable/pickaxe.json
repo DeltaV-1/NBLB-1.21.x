@@ -127,6 +127,19 @@
     "nblb:netherrack_wall",
     "nblb:red_nether_brick_fence_gate",
     "nblb:red_nether_brick_fence",
-    "nblb:nether_brick_fence_gate"
+    "nblb:nether_brick_fence_gate",
+    "nblb:basalt_slab",
+    "nblb:basalt_stairs",
+    "nblb:basalt_wall",
+    "nblb:polished_basalt_bricks",
+    "nblb:polished_basalt_brick_slab",
+    "nblb:polished_basalt_brick_stairs",
+    "nblb:polished_basalt_brick_wall",
+    "nblb:polished_basalt_slab",
+    "nblb:polished_basalt_stairs",
+    "nblb:polished_basalt_wall",
+    "nblb:smooth_basalt_slab",
+    "nblb:smooth_basalt_stairs",
+    "nblb:smooth_basalt_wall"
   ]
 }

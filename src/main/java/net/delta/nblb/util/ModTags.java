@@ -15,7 +15,6 @@ public class ModTags {
 
     }
     public static class Items {
-        public static final TagKey<Item> EXAMPLE_ITEMS = createTag("example-items");
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(NBLB.MOD_ID, name));
         }
